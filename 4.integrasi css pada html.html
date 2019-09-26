@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Contoh Inline Style CSS</title>
+
+         <style type="text/css">
+            h2 {
+                background-color: black;
+                color:white;
+                }                
+         </style><!--input dengan metode internal style sheet menggunakan kode css terpisah dengan kode html tetapi masih 1 halalaman html
+            dengan menggunakan tag style di head,properti yang di pakai style akan berlaku pada semua 
+            yang ada di halaman html tersebut-->
+         
+         
+        <link rel="stylesheet" type="text/css" href="4.integrasi css pada html.css"><!--external style sheet menggunakan kode css yang sepenuhnya
+        terpisah dari html dengan membuat file css sendiri,lalu di panggil dengan tag link rel styleshet atau  @import url-->   
+    </head>
+   <body> <!--inline style metode memakai kode css langsung pada tag html dengan atribut style -->
+        <h1 style="background-color:black; color:white" > 
+            <!-- memasukan kode css  pada tag html menggunakan atribut style -->
+            Text ini akan bewarna putih dan background warna
+            hitam
+        </h1>
+
+        <h2>Text ini akan bewarna putih dan background warna hitam</h2> 
+        <!--internal style sheet-->    
+        <h3>Text ini akan bewarna putih dan background warna hitam</h3>
+        <!--external style sheet-->
+   </body>
+</html>
+ 

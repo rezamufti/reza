@@ -1,0 +1,40 @@
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contoh Inheritance dalam CSS</title>
+        <style type="text/css">
+            div.satu {
+                border: 1px solid black;
+                color: blue;
+            }
+ 
+            div.dua {
+                border: 1px solid black;
+            }
+            p.dua {
+                border: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="satu">
+          <p class="satu">
+            Kalimat ini tanpa <em class="satu">nilai property
+            inherit</em> CSS
+          </p>
+        </div>
+        <br />
+        <div class="dua">
+          <p class="dua">
+            Kalimat ini menggunakan <em class="dua">nilai propertyinherit</em> CSS
+          </p>
+        </div>
+    </body>
+</html> 
+<!--di class=1 sesuai sifatnya,property border hanya bisa di diturunkan ke tag induk (div) 
+    dan tidak bisa di wariskan ke tag child (p)-->
+<!--di class=2 dengan menambahkan nilai inherit kedalam tag yang di inginkan maka bisa menggunakan 
+    property border karena nilai inherit membuat tag yg di tambahi nilai inherit bisa memakai property border -->
+      
+ 

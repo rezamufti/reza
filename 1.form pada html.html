@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- -->
+<html>
+    <head>
+        <title>Belajar Membuat Form </title>
+    </head>
+
+    <body>
+        <form action=" formulir.html" method="get"> 
+            <!--data form ini akan dikirimkan ke formulir.html dan isian form yang dikirim akan terlihat di url browser  -->
+            Nama: <input type="text" name="nama" value="Nama Kamu" /> 
+            <!--form nama dengan inputan text biasa dengan isian nama kamu -->
+        <br /> <!--break paragraf -->
+
+            Password: <input type="password" name="password" /> 
+            <!--form password dengan inputan berupa bintang atau bulatan dengan isian password -->
+        <br />
+
+            Jenis Kelamin : 
+        <input type="radio" name="jenis_kelamin" value="laki-laki"checked /> 
+            Laki - Laki
+            <!--form jenis kelamin dengan checkbox tapi harus milih salah satu. dengan value "laki-laki" -->
+        <input type="radio" name="jenis_kelamin" value="perempuan" /> 
+            Perempuan
+            <!--form jenis kelamin dengan checkbox tapi harus milih salah satu. dengan value "perempuan" -->
+        <br />
+
+            Hobi: <input type="checkbox" name="hobi_baca" /> Membaca Buku 
+            
+            <input type="checkbox" name="hobi_nulis" checked /> Menulis
+            <!--form hobi dengan inputan checkbox yang dapat di checklisht atau dicentang atau tidak isi. dan value yang di chek adlah hobi nulis -->
+            
+            <input type="checkbox" name="hobi_mancing" /> Memancing
+        <br />
+
+            Asal Kota:
+            <select name="asal_kota" > 
+                <!--select adalah tag untuk inputan yang telah disediakan dan hanya bisa memilih dari pilihan yan disediakan
+                dan optionnya ada jakarta bandung dan semarang.ada tidaknya property value tidak akan keliatan di form
+                dan properti select membuat pilihan default yang muncul form-->
+            <option value="Kota Jakarta"> Jakarta</option>
+            <option>Bandung</option>
+            <option value="Kota Semarang" selected>Semarang</option></select>
+        
+        <br />
+
+            Komentar Anda: 
+           
+ 
+        <textarea name="komentar" rows="5" cols="20"> <!--textarea sama seperti input text area hanya berbeda kapasitasnya-->
+            Silahkan katakan isi hati anda
+        </textarea>
+        <br />
+
+        <input type="submit" value="Mulai Proses!" >
+        <!--submit menampilka tombol untuk memproses form dan di letakkan d akhir form
+        jika di beri value maka txt tombl submit anti d form sesuai value-->
+        </form>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+ 
+<!DOCTYPE html> <!--prioritas berdasrkan sumbernya-->
+<html>
+    <head>
+        <title>Contoh Kasus Cascading CSS</title>
+        <link rel="stylesheet" type="text/css" href="prioritas.css"> 
+            
+        <style type="text/css">
+            h2 {
+               color:red;
+               }
+
+        </style> 
+    </head>
+    <body>
+        <h2>akan berwarna apa saya ?...1</h2>
+        <h2 style="color:green">akan berwarna apa saya ?...2</style></h2>
+
+    </body>
+
+    <!--akan berwarna apa saya ?...1 berwarna merah karena internal style menndapat prioritas lebih tinggi di banding external
+    akan berwarna apa saya ?...2 berwarna hijau karena inline style mendapat prioritas lebih tinggi di banding internal berwarna merah
+    dan external berwarna biru -->
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contoh Perbandingan Ukuran dari font-size</title>
+        <style type="text/css">
+            body    { font-size:14pt; } 
+            p.satu  { font-size:8mm; }
+            p.dua   { font-size:0.35in; }
+            p.tiga  { font-size:2.2pc; }           
+            p.empat { font-size:20px; }
+            p.lima  { font-size:1.8em }  
+            p.enam  { font-size:3ex; }
+            p.tujuh { font-size:190%; }
+        </style>
+    </head>
+    <!---->
+    <body>
+       <p>Kalimat ini akan berukuran 14 point</p> <!--nilai absolut-->
+       <p class="satu">Kalimat ini akan berukuran 8
+        milimeter</p><!--nilai absolut--> 
+       <p class="dua">Kalimat ini akan berukuran 0,35
+        inchi</p><!--nilai absolut-->
+       <p class="tiga">Kalimat ini akan berukuran 2,2 pica</p><!--nilai absolut-->
+       <p class="empat">Kalimat ini akan berukuran 20 
+        pixel</p><!--nilai relatif-->
+       <p class="lima">Kalimat ini akan berukuran 1,8 em</p><!--nilai relatif--> 
+       <p class="enam">Kalimat ini akan berukuran 3 ex</p><!--nilai relatif-->
+       <p class="tujuh">Kalimat ini akan berukuran 190%</p> <!--nilai persentase-->
+    </body>
+</html>
+<!--kesimpulannya nilai absolut tidak di pengaruhi oleh tag induk yang ada d head
+    nilai relative dan nilai persentase bisa dipengaruhi tag induk,ketika membuat web disarankan 
+menggunakan tag relative karena meudahkan ketika ad perubahan-->

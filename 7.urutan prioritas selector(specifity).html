@@ -1,0 +1,36 @@
+ 
+<!DOCTYPE html> <!--prioritas berdasrkan spesifikasinya-->
+<html>
+    <head>
+        <title>Contoh Kasus Spesifik CSS</title>
+            
+        <style type="text/css">
+            
+            p  {
+               color:red;
+               }
+            div p {
+               color:green;
+               }
+            #aaa{
+               color:orange;
+               }
+            body div p {
+               color:yellow;
+               }
+            div p.kalimat {
+               color:silver;
+               }
+   
+        </style> 
+    </head>
+    <body>
+        <div>
+            <p id="aaa">
+                sedang belajar css...
+            </p>
+        </div>
+    </body>
+
+    <!--karena didalam body tag yang di pakai id.ketika memanggil id di head harus menggunakan tanda (#). maka yang yang lebih
+    spesifik dan mendapat prioritas tinggi adalah #aaa-->

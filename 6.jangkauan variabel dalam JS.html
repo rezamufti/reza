@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <title>Belajar JavaScript</title>
+  
+    <script>
+        var nilai = "global";
+        function test() 
+        {
+        var nilai = "lokal";
+        var nilai_lokal = "jti.polije";
+        tanpa_var = "no_scope"; //akan menjadi global variabel!!
+        console.log(nilai);
+        }
+ 
+        test(); // print: lokal
+        console.log(nilai); // print: global
+        console.log(tanpa_var); //print: no_scope (bisa diakses)
+        console.log(nilai_lokal); //error, karena nilai_lokal adalah lokal variabel
+        
+    </script>
+    </head>
+    <body>
+        <h1>Belajar JavaScript</h1>
+        <p> Saya sedang belajar JavaScript di jti.polije.com </p>
+    </body>
+</html>
+        
+<!--Variabel nilai jika diakses dari luar fungsi akan bernilai (global),
+sedangkan jika diakses dari dalam fungsi akan bernilai (lokal). Variabel tanpa_var
+sukses ditampilkan karena variabel ini telah menjadi variabel global.
+Saat mencoba mengakses variabel nilai_lokal, web browser akan
+menampilkan error karen variabel nilai_lokal bersifat lokal di dalam
+fungsi test, sehingga jika diakses dari luar fungsi, JavaScript ‘tidak melihat’
+variabel ini, dan menampilkan error. -->
+             

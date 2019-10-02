@@ -1,0 +1,35 @@
+.background{
+    background-image:url("https://i.pinimg.com/originals/86/89/d5/8689d5dfde12951408cd368904489fcd.jpg") ;
+    
+}
+.navbar{
+    margin-top:30px;
+}
+.top{
+    margin-top: 30px;
+    color:aquamarine;
+}
+.h5produk{
+    color: aquamarine;
+}
+.jumbotron{
+    text-align: center;
+    background: rgb(148, 176, 218);
+    margin-top:30px;
+}
+.produk{
+    margin-bottom: 20px
+}
+.form{
+    margin-top: 30px;
+    color: whitesmoke;
+}
+.jumbotron-fluid{
+    margin-top: 30px;
+    text-align: center;
+}
+footer {
+    background: black;
+    color: white;
+    padding: 30px;
+}
